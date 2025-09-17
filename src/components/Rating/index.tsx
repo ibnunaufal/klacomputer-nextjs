@@ -10,7 +10,7 @@ const ratingData: Rating[] = [
     account: "KLA Computer",
     star: 4.9,
     reviews: 120,
-    storeLink: "https://g.page/r/CcX1j8mJt8EHEB0/review",
+    storeLink: "https://maps.app.goo.gl/NMuZzHzKmZRznh7Y7",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const ratingData: Rating[] = [
     account: "KLA Computer",
     star: 4.8,
     reviews: 80,
-    storeLink: "https://www.tokopedia.com/klacomputer",
+    storeLink: "https://www.tokopedia.com/klacomputerofficial",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const Ratings = () => {
       <div className="container">
         <SectionTitle
           title="Rating Kami"
-          paragraph="Pelayanan prima kami tercermin dari ulasan positif pelanggan kami."
+          paragraph="Pelayanan prima KLA Computer tercermin dari ulasan positif pada berbagai platform kami."
           center
         />
 

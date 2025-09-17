@@ -22,7 +22,7 @@ export default function ShortDescription() {
         </div>
         <div className="container text-center mb-10">
           <Link
-          href="https://nextjstemplates.com/templates/saas-starter-startup"
+          href="https://www.klacomputer.com/about"
           className="bg-primary hover:bg-primary/80 rounded-xl px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out"
         >
           Tentang KLA Computer

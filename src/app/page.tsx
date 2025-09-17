@@ -15,8 +15,8 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  title: "KLA Computer - Temukan Penawaran Terbaik Disini!",
+  description: "KLA Computer adalah toko komputer terkemuka di Indonesia yang menawarkan berbagai pilihan laptop, aksesoris, dan perangkat teknologi lainnya dengan harga kompetitif dan layanan pelanggan terbaik.",
   // other metadata
 };
 

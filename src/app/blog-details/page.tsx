@@ -5,8 +5,8 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Details Page for Startup Nextjs Template",
+  title: "Blog Details Page | KLA Computer - Temukan Penawaran Terbaik Disini!",
+  description: "Ini adalah halaman detail blog KLA Computer, di mana Anda dapat membaca artikel lengkap tentang teknologi, ulasan produk, tips dan trik, serta berita terkini seputar dunia komputer dan gadget.",
   // other metadata
 };
 
@@ -20,7 +20,7 @@ const BlogDetailsPage = () => {
               <div>
                 <h2 className="mb-8 text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight dark:text-white">
                   10 amazing sites to download stock photos & digital assets for
-                  free
+                  
                 </h2>
                 <div className="border-body-color/10 mb-10 flex flex-wrap items-center justify-between border-b pb-4 dark:border-white/10">
                   <div className="flex flex-wrap items-center">

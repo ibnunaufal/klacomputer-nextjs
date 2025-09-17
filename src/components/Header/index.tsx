@@ -43,7 +43,7 @@ const Header = () => {
       <header
         className={`header top-0 left-0 z-40 flex w-full items-center ${
           sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark shadow-sticky fixed z-9999 bg-white/80 backdrop-blur-xs transition"
+            ? "dark:bg-gray-dark dark:shadow-sticky-dark shadow-sticky fixed z-9999 bg-primary backdrop-blur-xs transition"
             : "absolute bg-transparent"
         }`}
       >
@@ -53,7 +53,7 @@ const Header = () => {
               <Link
                 href="/"
                 className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
+                  sticky ? "py-5 lg:py-2" : "py-5"
                 } `}
               >
                 <Image

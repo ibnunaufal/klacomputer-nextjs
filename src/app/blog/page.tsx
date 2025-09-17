@@ -5,8 +5,8 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Blog Page for Startup Nextjs Template",
+  title: "Blog Page | KLA Computer - Temukan Penawaran Terbaik Disini!",
+  description: "Ini adalah halaman blog KLA Computer, tempat Anda dapat menemukan artikel terbaru tentang teknologi, ulasan produk, tips dan trik, serta berita terkini seputar dunia komputer dan gadget.",
   // other metadata
 };
 
