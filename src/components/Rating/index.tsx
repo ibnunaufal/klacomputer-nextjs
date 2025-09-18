@@ -8,8 +8,8 @@ const ratingData: Rating[] = [
     icon: "/images/klacomputer/google-review.png",
     platform: "Google",
     account: "KLA Computer",
-    star: 4.9,
-    reviews: 120,
+    star: 5,
+    reviews: 5500,
     storeLink: "https://maps.app.goo.gl/NMuZzHzKmZRznh7Y7",
   },
   {
@@ -17,8 +17,8 @@ const ratingData: Rating[] = [
     icon: "/images/klacomputer/tokopedia-logo.png",
     platform: "Tokopedia",
     account: "KLA Computer",
-    star: 4.8,
-    reviews: 80,
+    star: 4.9,
+    reviews: 3027,
     storeLink: "https://www.tokopedia.com/klacomputerofficial",
   },
   {
@@ -26,8 +26,8 @@ const ratingData: Rating[] = [
     icon: "/images/klacomputer/shopee-logo.png",
     platform: "Shopee",
     account: "KLA Computer",
-    star: 4.7,
-    reviews: 50,
+    star: 4.9,
+    reviews: 10900,
     storeLink: "https://shopee.co.id/klacomputer",
   }
 ];

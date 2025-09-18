@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 
@@ -43,7 +43,7 @@ const Header = () => {
       <header
         className={`header top-0 left-0 z-40 flex w-full items-center ${
           sticky
-            ? "dark:bg-gray-dark dark:shadow-sticky-dark shadow-sticky fixed z-9999 bg-primary backdrop-blur-xs transition"
+            ? "dark:bg-gray-dark dark:shadow-sticky-dark shadow-sticky fixed z-9999 bg-gray-500 backdrop-blur-xs transition"
             : "absolute bg-transparent"
         }`}
       >
@@ -53,15 +53,15 @@ const Header = () => {
               <Link
                 href="/"
                 className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-5"
+                  sticky ? "py-0 lg:py-0" : "py-0"
                 } `}
               >
                 <Image
                   src="/images/klacomputer/logo-transparent.png"
                   alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full"
+                  width={70}
+                  height={10}
+                  className="w-full dark:block object-cover"
                 />
               </Link>
             </div>
@@ -101,21 +101,21 @@ const Header = () => {
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
-                            <Link
+                          <Link
                             href={menuItem.path}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
-                              ? "text-white font-bold"
-                              : "text-white hover:text-gray-300 dark:text-white/70 dark:hover:text-white"
+                                ? `${usePathName === "/" ? "text-white" : "text-primary"}  dark:text-white font-bold underline underline-offset-8`
+                                : `${usePathName === "/" ? "text-white hover:text-white/70" : "text-dark"} hover:text-primary dark:text-white/70 dark:hover:text-white`
                             }`}
-                            >
+                          >
                             {menuItem.title}
-                            </Link>
+                          </Link>
                         ) : (
                           <>
                             <p
                               onClick={() => handleSubmenu(index)}
-                              className="text-white group-hover:text-white/70 flex cursor-pointer items-center justify-between py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 dark:text-white/70 dark:group-hover:text-white"
                             >
                               {menuItem.title}
                               <span className="pl-3">
@@ -152,18 +152,6 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                {/* <Link
-                  href="/signin"
-                  className="text-white hidden px-7 py-3 text-base font-medium hover:opacity-70 md:block"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign Up
-                </Link> */}
                 <div>
                   <ThemeToggler />
                 </div>
